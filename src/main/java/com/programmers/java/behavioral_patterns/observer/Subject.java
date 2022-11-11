@@ -5,11 +5,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Observer {
+public class Subject {
 
     private Map<String, List<구독자>> 구독자들 = new HashMap<>();
 
-    public Observer(String... args) {
+    public Subject(String... args) {
         for (String eventType : args) {
             구독자들.put(eventType, new ArrayList<>());
         }
