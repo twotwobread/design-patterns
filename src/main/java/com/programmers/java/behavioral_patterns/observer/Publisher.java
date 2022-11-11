@@ -5,11 +5,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Subject {
+public class Publisher {
 
     private Map<String, List<구독자>> 구독자들 = new HashMap<>();
 
-    public Subject(String... args) {
+    public Publisher(String... args) {
         for (String eventType : args) {
             구독자들.put(eventType, new ArrayList<>());
         }
