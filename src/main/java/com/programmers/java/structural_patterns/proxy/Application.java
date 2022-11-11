@@ -11,8 +11,8 @@ public class Application {
 
     static Map<Integer, Simulation> map = new HashMap<>() {{
         put(1, new SimulationLogging());
-        put(2, new SimulationVirtual());
-        put(3, new SimulationProtection());
+        put(2, new SimulationProtection());
+        put(3, new SimulationVirtual());
     }};
 
     public static void main(String[] args) {
@@ -23,12 +23,12 @@ public class Application {
         simulation.run();
         simulation.jump();
 
-        /******** 가상 프록시 *******/
+        /******** 보호 프록시 *******/
         simulation = map.get(2);
         simulation.run();
         simulation.jump();
 
-        /******** 보호 프록시 *******/
+        /******** 가상 프록시 *******/
         simulation = map.get(3);
         simulation.run();
         simulation.jump();
