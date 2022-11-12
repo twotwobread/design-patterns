@@ -23,7 +23,7 @@ public class Publisher {
         구독자들.get(eventType).remove(subscriber);
     }
 
-    public void 알림보내기(String eventType, String 문자내용) {
+    public void notify(String eventType, String 문자내용) {
         System.out.println();
         System.out.println(eventType + "를 구독한 구독자들에게 이를 알리기");
         List<구독자> 이벤트구독자들 = 구독자들.get(eventType);

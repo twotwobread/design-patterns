@@ -9,11 +9,11 @@ public class 하이마트 {
 
     public void 맥북재고확보() {
         System.out.println("하이마트에 맥북 재고가 확보되었음.");
-        publisher.알림보내기("맥북", "맥북 재고 들어왔습니다.");
+        publisher.notify("맥북", "맥북 재고 들어왔습니다.");
     }
 
     public void 갤럭시노트북재고확보() {
         System.out.println("하이마트에 갤럭시 노트북 재고가 확보되었음.");
-        publisher.알림보내기("갤럭시", "갤럭시노트북 재고 들어왔습니다.");
+        publisher.notify("갤럭시", "갤럭시노트북 재고 들어왔습니다.");
     }
 }
